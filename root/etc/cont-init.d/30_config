@@ -24,6 +24,6 @@ sed -i "s/user='mysql'/user='abc'/g" /usr/bin/mysqld_safe
 
 # set permissions
 [[ -d /etc/mysql ]] && \
-	find /etc/mysql -type f -name "*.cnf" -exec chown root:root {} \; -exec chmod 644 {} \;
+	find /etc/mysql -type f -name "*.cnf" -exec chmod 644 {} \;
 chmod -R 777 \
 	/var/run/mysqld
